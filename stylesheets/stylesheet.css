@@ -49,9 +49,6 @@ table {
 Site styling
 ***********/
 
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic);
-
 html {
   box-sizing: border-box;
 }
@@ -61,7 +58,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'freight-sans-pro', sans-serif;
   max-width: 60em;
   margin: 0 auto;
   padding: 0 2em 5em;
