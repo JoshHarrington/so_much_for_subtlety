@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+      <article class="group">
+
+        {% include sidebar.html %}
+
+        <section class="left-column">
+
+          <div class="show-block">
+            <h2><a href="{{ page.url | prepend: site.baseurl }}">{{ page.episode_number_display }}: ‘{{ page.title }}’</a></h2>
+            <p class="podcast-details">{{ page.date | date: "%-d %B %Y" }}  •  {{ page.length }} minutes</p>
+
+            <div class="podcast-summary">
+              {{ page.content }}
+            </div>
+          </div>
+
+        </section>
+
+        {% include footer.html %}
+
+      </article>
+
+  </body>
+
+</html>

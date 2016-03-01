@@ -1,91 +1,31 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="So Much For Subtlety : Repo for So Much For Subtlety podcast with @samlester">
+{% include sidebar.html %}
 
-    <script src="https://use.typekit.net/ruj7pfd.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<section class="left-column">
 
-    <title>So Much For Subtlety</title>
-  </head>
+  {% for post in site.posts %}
 
+    <div class="show-block">
+      <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.episode_number_display }}: ‘{{ post.title }}’</a></h2>
+      <p class="podcast-details">{{ post.date | date: "%-d %B %Y" }}  •  {{ post.length }} minutes</p>
 
-  <body>
+      <div class="podcast-summary"><p>In the first episode of So Much For Subtlety, Josh and Sam discuss lorem ipsum dolor sit amet lorem ipsum dolor, in the first episode of So Much For Subtlety, Josh and Sam discuss lorem ipsum episode of So Much For Subtlety, Josh and Sam  dolor sit amet lorem ipsum dolor</p></div>
+      
+      <div class="show-player"></div>
 
-      <header>
-        <h1>So Much For Subtlety</h1>
-      </header>
+      <div class="notes">
+        <h3>Notes and links</h3>
+        <ul>
+          <li><a href="#na">Link title goes here like this</a></li>
+          <li><a href="#na">Another link goes here</a></li>
+          <li><a href="#na">This is a link</a></li>
+          <li><a href="#na">That thing we talked about is linked here</a></li>
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
 
-      <article class="group">
-
-        <section class="right-column">
-          <div class="about-block">
-            <h2>About</h2>
-            <p>Topica11y is a series of conversations between <a href="#na">Josh Harrington</a> and <a href="#na">Sam Lester</a>.</p>
-          </div>
-
-          <div class="subscribe-block">
-            <h2>Subscribe</h2>
-            <ul>
-              <li><a href="#na">iTunes</a></li>
-              <li><a href="#na">Overcast</a></li>
-              <li><a href="#na">Pocket Cast</a></li>
-              <li><a href="#na">RSS</a></li>
-            </ul>
-          </div>
-        </section>
-
-
-        <section class="left-column">
-
-          <div class="show-block">
-            <h2>01: ‘So, we’re doing a podcast’</h2>
-            <p class="podcast-details">25th January 2016  •  53 minutes</p>
-            <div class="podcast-summary"><p>In the first episode of topica11y, Josh and Sam discuss lorem ipsum dolor sit amet lorem ipsum dolor, in the first episode of topica11y, Josh and Sam discuss lorem ipsum episode of topica11y, Josh and Sam  dolor sit amet lorem ipsum dolor</p></div>
-            <div class="show-player"></div>
-
-            <div class="notes">
-              <h3>Notes and links</h3>
-              <ul>
-                <li><a href="#na">Link title goes here like this</a></li>
-                <li><a href="#na">Another link goes here</a></li>
-                <li><a href="#na">This is a link</a></li>
-                <li><a href="#na">That thing we talked about is linked here</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="show-block">
-            <h2>01: ‘So, we’re doing a podcast’</h2>
-            <p class="podcast-details">25th January 2016  •  53 minutes</p>
-            <div class="podcast-summary"><p>In the first episode of topica11y, Josh and Sam discuss lorem ipsum dolor sit amet lorem ipsum dolor, in the first episode of topica11y, Josh and Sam discuss lorem ipsum episode of topica11y, Josh and Sam  dolor sit amet lorem ipsum dolor</p></div>
-            <div class="show-player"></div>
-
-            <div class="notes">
-              <h3>Notes and links</h3>
-              <ul>
-                <li><a href="#na">Link title goes here like this</a></li>
-                <li><a href="#na">Another link goes here</a></li>
-                <li><a href="#na">This is a link</a></li>
-                <li><a href="#na">That thing we talked about is linked here</a></li>
-              </ul>
-            </div>
-          </div>
-
-
-
-
-
-
-
-        </section>
-
-      </article>
-
-
-  </body>
-</html>
+</section>
