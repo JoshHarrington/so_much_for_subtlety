@@ -14,7 +14,7 @@
         {% include sidebar.html %}
 
         <article class="post content">
-          <h2 class="h2 post__heading"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.episode_number_display }}: ‘{{ page.title }}’</a></h2>
+          <h2 class="h2 post__heading">{{ page.episode_number_display }}: ‘{{ page.title }}’</h2>
           <ul class="post__meta">
             <li>{{ page.date | date: "%-d %B %Y" }}</li>
             <li>{{ page.length }} minutes</li>
