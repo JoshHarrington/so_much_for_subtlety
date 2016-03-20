@@ -170,12 +170,12 @@ a:hover, a:focus {
   background-image: url('../images/logo.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  width: 236px;
-  height: 96px;
+  width: 230px;
+  height: 95px;
 
   @include media($medium) {
-    width: 404px;
-    height: 162px;
+    width: 400px;
+    height: 164px;
   }
 }
 
