@@ -1,16 +1,17 @@
-<section class="right-column">
-  <div class="about-block">
-    <h2>About</h2>
-    <p>So Much For Subtlety is a series of conversations between <a href="http://www.twitter.com/Josh_Harrington">Josh Harrington</a> and <a href="http://www.twitter.com/samlester">Sam Lester</a>.</p>
+<section class="sidebar">
+  <div class="sidebar__block">
+    <h2 class="h3">About</h2>
+    <p>{{ site.description }}</p>
   </div>
 
-  <div class="subscribe-block">
-    <h2>Subscribe</h2>
-    <ul>
-      <li><a href="#na">iTunes</a></li>
-      <li><a href="#na">Overcast</a></li>
-      <li><a href="#na">Pocket Cast</a></li>
-      <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
+  <div class="sidebar__block">
+    <h2 class="h3">Subscribe</h2>
+
+    <ul class="channels">
+      <li class="channels__item"><a href="#na">iTunes</a></li>
+      <li class="channels__item"><a href="#na">Overcast</a></li>
+      <li class="channels__item"><a href="#na">Pocket Cast</a></li>
+      <li class="channels__item"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
     </ul>
   </div>
 </section>

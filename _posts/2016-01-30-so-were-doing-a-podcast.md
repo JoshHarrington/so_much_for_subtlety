@@ -5,12 +5,10 @@ date:   2016-01-30 09:06:01 +0000
 length: 53
 episode_number: 1
 episode_number_display: "01"
-file: "/audio/test"
+audio_file: "/audio/2.mp3"
 ---
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-{% include audio-player.html filename=file %}
+In the first ever episode of So Much For Subtlety Josh and Sam discuss... something
 
 ### Notes and links
 - [Something](http://www.google.com)

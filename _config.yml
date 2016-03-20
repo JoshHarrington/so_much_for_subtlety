@@ -8,11 +8,9 @@
 # Site settings
 title: So Much For Subtlety
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  So Much For Subtlety is a series of random conversations, thought experiments and environmental rants between <a href="http://www.twitter.com/Josh_Harrington">Josh Harrington</a> and <a href="http://www.twitter.com/samlester">Sam Lester</a>.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://topica11y.com" # the base hostname & protocol for your site
+url: "http://www.somuchfor.com" # the base hostname & protocol for your site
 twitter_username: smfspodcast
 permalink: /:title
 

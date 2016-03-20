@@ -1,0 +1,55 @@
+// Variables
+// --------------------------------------------------
+
+// Colours
+$brand-color: #63BFB3;
+$action-color: #D44147;
+$body-text-color: #041726;
+$heading-text-color: #041726;
+$dark-color: #041726;
+
+$background-color: #FCFCFC;
+$border-color: #EDEDED;
+
+// Grid
+$gutter-width: 3em;
+
+// Typography
+$base-font-family: "freight-sans-pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$heading-font-family: "brandon-grotesque", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+$base-line-height: 1.4;
+$heading-line-height: 1.1;
+
+$heading-margin: 0.8em 0 0.4em 0;
+$paragraph-margin: 0.8em;
+
+$base-font-size: 16px;
+$base-font-size-medium: 18px;
+
+// Default scale
+$h1-font-size: 2.074rem;
+$h2-font-size: 1.728rem;
+$h3-font-size: 1.44rem;
+$h4-font-size: 1.2rem;
+$h5-font-size: 1rem;
+
+// Larger scale
+$h1-font-size-medium: 2.441rem;
+$h2-font-size-medium: 1.953rem;
+$h3-font-size-medium: 1.563rem;
+$h4-font-size-medium: 1.25rem;
+$h5-font-size-medium: 1rem;
+
+// Breakpoints
+$xsmall: 288px; // Mobile portrait (288px)
+$small: 560px; // Mobile landscape (560px)
+$medium: 720px; // Tablet portrait (720px)
+$large: 960px; // Desktop and tablet landscape (960px)
+$xlarge: 1200px; // Large desktop and TV (1200px)
+
+$xs: $xsmall;
+$s: $small;
+$m: $medium;
+$l: $large;
+$xl: $xlarge;
