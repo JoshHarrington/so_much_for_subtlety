@@ -11,5 +11,5 @@ audio_file: "/audio/2.mp3"
 We made it to episode 2!
 
 ### Notes and links
-- [Something](http://www.google.com)
+- [Hello Internet #56: Guns, Germs and Steel](http://www.hellointernet.fm/podcast/56)
 - [Something](http://www.google.com)
