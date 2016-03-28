@@ -2,28 +2,47 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | strip_html | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <title>{{ site.title | xml_escape }}</title>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
+    <language>en</language>
+    <copyright>All rights reserved</copyright>
+    <description>{{ site.description | strip_html | xml_escape }}</description>
+    <itunes:subtitle>Hank and John Green (YouTubers and etc) answer qu…</itunes:subtitle>
+    <itunes:owner>
+      <itunes:name>{{ site.title | xml_escape }}</itunes:name>
+      <itunes:email>{{ site.email }}</itunes:email>
+    </itunes:owner>
+    <itunes:author>{{ site.author }}</itunes:author>
     <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="{{ site.url }}{{ site.baseurl }}/images/itunes-artwork.png"/>
+    <image>
+      <url>{{ site.url }}{{ site.baseurl }}/images/itunes-artwork.png</url>
+      <title>{{ site.title | xml_escape }}</title>
+      <link>{{ site.url }}{{ site.baseurl }}/</link>
+    </image>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
     <itunes:category text="Society &amp; Culture" />
     <itunes:keywords>Josh,Sam,technology,politics,rant,tv,developers,culture,subtle</itunes:keywords>
-    <language>en-gb</language>
-    <itunes:image href="{{ site.url }}{{ site.baseurl }}/images/itunes-artwork.png" />
 
     {% for post in site.posts limit:10 %}
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
+        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        <title>{{ post.episode_number_display }}: {{ post.title | xml_escape }}</title>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        <itunes:duration>{{ post.duration }}</itunes:duration>
+        <itunes:author>{{ site.author }}</itunes:author>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:summary>{{ post.summary | xml_escape }}</itunes:summary>
+        <itunes:subtitle>{{ post.summary | truncate: 49 | xml_escape }}</itunes:subtitle>
+        <description>{{ post.content | xml_escape }}</description>
+        <enclosure type="audio/mpeg" url="{{ post.audio_file | prepend: site.baseurl | prepend: site.url }}" length="{{ post.audio_file_length }}"/>
+        <itunes:image href="{{ site.url }}{{ site.baseurl }}/images/itunes-artwork.png"/>
       </item>
     {% endfor %}
   </channel>

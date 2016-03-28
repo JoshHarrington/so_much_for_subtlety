@@ -11,6 +11,8 @@ description: > # this means to ignore newlines until "baseurl:"
   So Much For Subtlety is a series of random conversations, thought experiments and environmental rants between <a href="http://www.twitter.com/Josh_Harrington">Josh Harrington</a> and <a href="http://www.twitter.com/samlester">Sam Lester</a>.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.somuchfor.com" # the base hostname & protocol for your site
+email: "somuchforpodcast@gmail.com"
+author: "Sam Lester and Josh Harrington"
 twitter_username: smfspodcast
 permalink: /:title
 
