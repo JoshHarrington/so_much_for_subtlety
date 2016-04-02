@@ -2,7 +2,7 @@
 layout: post
 title: "The one about toilets"
 date: 2016-04-04 12:00:00 +0000
-duration: "01:08:49"
+duration: "01:08:29"
 episode_number: 3
 episode_number_display: "03"
 audio_file: "/audio/3.mp3"
