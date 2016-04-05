@@ -15,7 +15,6 @@ email: "somuchforpodcast@gmail.com"
 author: "Sam Lester and Josh Harrington"
 twitter_username: smfspodcast
 permalink: /:title
-gems: [liquid_pluralize]
 
 # Build settings
 markdown: kramdown

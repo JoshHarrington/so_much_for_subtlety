@@ -21,7 +21,7 @@
             {% assign duration = page.duration | split: ':' %}
             {% assign hours = duration[0] | times: 1 %}
             {% assign minutes = duration[1] | times: 1 %}
-            <li>{% if hours != 0 %}{{ hours | pluralize: 'hour' }}, {% endif %}{{ minutes | pluralize: 'minute' }}</li>
+            <li>{% if hours != 0 %}{{ hours }} hour{% if hours > 1 %}s{% endif %}{% if minutes != 0 %}, {% endif %}{% endif %}{% if minutes != 0 %}{{ minutes }} minute{% if minutes != 1 %}s{% endif %}{% endif %}</li>
           </ul>
 
           <div class="post__player player">
