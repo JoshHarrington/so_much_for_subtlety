@@ -17,7 +17,11 @@
           <h2 class="h2 post__heading">{{ page.episode_number_display }}: ‘{{ page.title }}’</h2>
           <ul class="post__meta">
             <li>{{ page.date | date: "%-d %B %Y" }}</li>
-            <li>{{ page.length }} minutes</li>
+
+            {% assign duration = page.duration | split: ':' %}
+            {% assign hours = duration[0] | times: 1 %}
+            {% assign minutes = duration[1] | times: 1 %}
+            <li>{% if hours != 0 %}{{ hours | pluralize: 'hour' }}, {% endif %}{{ minutes | pluralize: 'minute' }}</li>
           </ul>
 
           <div class="post__player player">
