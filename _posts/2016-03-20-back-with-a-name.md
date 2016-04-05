@@ -15,3 +15,5 @@ summary: "In a surprise turn of events Sam and Josh make it to episode 2 to disc
 - [List of spacecraft in the Culture series](https://en.wikipedia.org/wiki/List_of_spacecraft_in_the_Culture_series)
 - [Plastic soup](https://en.wikipedia.org/wiki/Great_Pacific_garbage_patch) (AKA Samland)
 - [Hello Internet #56: Guns, Germs and Steel](http://www.hellointernet.fm/podcast/56)
+- [Ed Balls](https://twitter.com/edballs/status/63623585020915713)
+- [Archer](https://www.netflix.com/gb/title/70171942) on Netflix
