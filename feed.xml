@@ -12,14 +12,14 @@ layout: null
     <language>en</language>
     <copyright>All rights reserved</copyright>
     <description>{{ site.description | strip_html | xml_escape }}</description>
-    <itunes:subtitle>Hank and John Green (YouTubers and etc) answer qu…</itunes:subtitle>
+    <itunes:subtitle>{{ post.summary | strip_html | truncate: 49 | xml_escape }}</itunes:subtitle>
     <itunes:owner>
       <itunes:name>{{ site.title | xml_escape }}</itunes:name>
       <itunes:email>{{ site.email }}</itunes:email>
     </itunes:owner>
     <itunes:author>{{ site.author }}</itunes:author>
     <itunes:explicit>no</itunes:explicit>
-    <itunes:image href="{{ site.url }}{{ site.baseurl }}/images/itunes-artwork.png"/>
+    <itunes:image href="{{ site.url }}{{ site.baseurl }}/images/itunes-artwork.jpg"/>
     <image>
       <url>{{ site.url }}{{ site.baseurl }}/images/itunes-artwork.png</url>
       <title>{{ site.title | xml_escape }}</title>
@@ -42,7 +42,7 @@ layout: null
         <itunes:subtitle>{{ post.summary | truncate: 49 | xml_escape }}</itunes:subtitle>
         <description>{{ post.content | xml_escape }}</description>
         <enclosure type="audio/mpeg" url="{{ post.audio_file | prepend: site.baseurl | prepend: site.url }}" length="{{ post.audio_file_length }}"/>
-        <itunes:image href="{{ site.url }}{{ site.baseurl }}/images/itunes-artwork.png"/>
+        <itunes:image href="{{ site.url }}{{ site.baseurl }}/images/itunes-artwork.jpg"/>
       </item>
     {% endfor %}
   </channel>
