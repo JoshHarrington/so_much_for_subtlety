@@ -5,7 +5,7 @@ date: 2016-01-30 09:06:01 +0000
 duration: "00:53:58"
 episode_number: 1
 episode_number_display: "01"
-audio_file: "/audio/01.mp3"
+audio_file: "/audio/1.mp3"
 audio_file_length: 65063428
 summary: "In the first ever episode of So Much For Subtlety Josh and Sam discuss the advancements in virtual reality at CES, free internet from evil tech corporations and seeding clouds in Silicon Valley."
 ---
