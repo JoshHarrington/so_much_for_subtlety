@@ -247,7 +247,7 @@ a:hover, a:focus {
 
   @include media($small) {
     float: left;
-    width: 31.33%;
+    width: 48%;
     margin-right: 2%;
   }
 
@@ -309,6 +309,18 @@ a:hover, a:focus {
 
   &:hover {
     background-color: tint(#FC7E0F, 10%);
+  }
+}
+
+.channels__item--pocket-casts a {
+  background-color: #F45145;
+
+  &:before {
+    background-image: url('../images/icon-pocket-casts.svg');
+  }
+
+  &:hover {
+    background-color: tint(#F45145, 10%);
   }
 }
 
