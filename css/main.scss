@@ -27,6 +27,7 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -227,4 +228,98 @@ a:hover, a:focus {
 
 .post__content {
   margin-bottom: 1em;
+}
+
+
+// Sidebar
+// --------------------------------------------------
+
+.channels {
+  display: block;
+  margin-top: 1em;
+  overflow: hidden;
+}
+
+.channels__item {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5em;
+
+  @include media($small) {
+    float: left;
+    width: 31.33%;
+    margin-right: 2%;
+  }
+
+  @include media($medium) {
+    width: 100%;
+    float: none;
+  }
+}
+
+.channels__item a {
+  @include transition(background-color 0.3s);
+
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5em;
+  font-family: $heading-font-family;
+  font-size: $h4-font-size;
+
+  &:before {
+    content: '';
+    display: block;
+    float: left;
+    margin-right: 0.5em;
+    width: 30px;
+    height: 30px;
+    margin-top: -0.05em;
+
+    @include media($m) {
+      margin-top: 0.05em;
+    }
+  }
+
+  @include media($m) {
+    font-size: $h4-font-size-medium;
+  }
+}
+
+.channels__item--itunes a {
+  background-color: $dark-color;
+
+  &:before {
+    background-image: url('../images/icon-itunes.svg');
+  }
+
+  &:hover {
+    background-color: tint($dark-color, 10%);
+  }
+}
+
+.channels__item--overcast a {
+  background-color: #FC7E0F;
+
+  &:before {
+    background-image: url('../images/icon-overcast.svg');
+  }
+
+  &:hover {
+    background-color: tint(#FC7E0F, 10%);
+  }
+}
+
+.channels__item--rss a {
+  background-color: #82828C;
+
+  &:before {
+    background-image: url('../images/icon-rss.svg');
+  }
+
+  &:hover {
+    background-color: tint(#82828C, 10%);
+  }
 }

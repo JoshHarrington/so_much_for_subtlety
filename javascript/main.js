@@ -1,4 +1,4 @@
-console.log('This would be the main JS file.');
+//console.log('This would be the main JS file.');
 
 $('audio').mediaelementplayer({
   alwaysShowHours: true,
